@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(version: 2019_08_21_013432) do
     t.string "slug"
     t.boolean "add_to_google_cal", default: false
     t.integer "weekly_dosage", default: [0, 1, 2, 3, 4, 5, 6], array: true
+    t.boolean "same_time", default: true
     t.index ["slug"], name: "index_medications_on_slug", unique: true
   end
 

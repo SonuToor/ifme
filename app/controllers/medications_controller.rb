@@ -114,7 +114,8 @@ class MedicationsController < ApplicationController
       :comments, :add_to_google_cal,
       take_medication_reminder_attributes: %i[active id],
       refill_reminder_attributes: %i[active id],
-      weekly_dosage: []
+      weekly_dosage: [], 
+      # :same_time
     )
   end
 end

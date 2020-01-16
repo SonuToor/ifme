@@ -75,4 +75,8 @@ module MedicationsHelper
   def weekly_dosage(medication)
     medication.weekly_dosage.map { |i| t(:'date.abbr_day_names')[i] }.join(', ')
   end
+
+  def same_time(medication)
+    # medication.
+  end
 end

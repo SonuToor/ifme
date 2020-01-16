@@ -511,6 +511,7 @@
     "link_name": "jollyjerr",
     "link": "https://github.com/jollyjerr",
     "social": "github"
+<<<<<<< HEAD
   },
     {
     "name": "Jasmine Logan",
@@ -530,6 +531,9 @@
     "link": "http://github.com/hassan11196",
     "social": "github"
   },
+=======
+  }, 
+>>>>>>> 06145edb2422c26c10bc56217f5f4f9c245f48f1
   {
     "name": "Sonu Toor",
     "image": "/assets/contributors/sonu_toor.jpg",
