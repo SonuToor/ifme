@@ -95,7 +95,7 @@ module MedicationsFormHelper
   end
 
   def extra_fields
-    [medication_weekly_dosage, medication_refill, medication_comments]
+    [medication_weekly_dosage, same_time_checkbox, medication_refill, medication_comments]
   end
 
   def common_fields
@@ -172,6 +172,18 @@ module MedicationsFormHelper
         value: i
       }
     end
+  end
+  
+  def same_time_checkbox
+    {
+      id: 'medication_same_time_daily',
+      type:'checkbox',
+      label: 'Same Time Daily?',
+      dark: true,
+      checked: @medication.same_time_daily,
+      uncheckedValue: false,
+      value: true
+    }
   end
 
   def medication_type_unit_tablets(type)

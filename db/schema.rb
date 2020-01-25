@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_21_013432) do
+ActiveRecord::Schema.define(version: 2020_01_25_025916) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(version: 2019_08_21_013432) do
     t.string "slug"
     t.boolean "add_to_google_cal", default: false
     t.integer "weekly_dosage", default: [0, 1, 2, 3, 4, 5, 6], array: true
+    t.boolean "same_time_daily", default: true
     t.index ["slug"], name: "index_medications_on_slug", unique: true
   end
 
